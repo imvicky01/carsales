@@ -1,11 +1,14 @@
 import React from "react";
 import "./Navbar.css";
+import logo from '../../Assets/logo.png'
+import { IoIosCloseCircle } from 'react-icons/io'
+import { TbGridDots } from 'react-icons/tb'
 
 const Navbar = () => {
   return (
     <div className="header">
       <div className="logoDiv">
-        <img src="" alt="" className="logo" />
+        <img src={logo} alt="logo image" className="logo" />
       </div>
       <div className="navbar">
         <ul className="menu">
@@ -30,7 +33,11 @@ const Navbar = () => {
             </a>
           </li>
         </ul>
+
+        <IoIosCloseCircle className='icon' />
       </div>
+      <div className="signUp flex">SignUp</div>
+      <TbGridDots className='icon' />
     </div>
   );
 };
