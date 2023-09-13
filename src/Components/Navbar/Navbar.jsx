@@ -19,25 +19,29 @@ const Navbar = () => {
           </li>
           <li className="linkItem">
             <a href="/" className="link">
-              Auctions
+              New Cars
             </a>
           </li>
           <li className="linkItem">
             <a href="/" className="link">
-              Sell
+              Actions
             </a>
           </li>
           <li className="linkItem">
             <a href="/" className="link">
-              Used Car
+              Seller
             </a>
           </li>
         </ul>
 
-        <IoIosCloseCircle className='icon' />
+        <IoIosCloseCircle className='icon 
+        closeIcon' />
       </div>
-      <div className="signUp flex">SignUp</div>
-      <TbGridDots className='icon' />
+      <div className="signUp flex">
+        <div className="text">Sign Up</div>
+        <TbGridDots className='icon 
+      toggleNavbarIcon' />
+      </div>
     </div>
   );
 };

@@ -31,3 +31,60 @@ p {
   color: var(--textColor);
   line-height: 1.4rem;
 }
+
+
+.flex {
+  display: grid;
+  align-items: center;
+}
+
+.grid {
+  display: grid;
+  align-items: center;
+}
+
+.btn {
+  border: none;
+  outline: none;
+  background: none;
+  cursor: pointer;
+}
+
+.primaryBtn {
+  background: var(--primaryColor);
+  padding: 10px 15px;
+  border-radius: 10px;
+  font-weight: 600;
+  color: var(--blackColor);
+  font-size: 12px;
+
+  &:hover {
+    background: var(--secondaryColour);
+    color: var(--blackColor);
+  }
+}
+
+.container {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.section {
+  padding: 4rem 0 2rem;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.icon {
+  font-size: 65px;
+  cursor: pointer;
+}
+
+.secTitle {
+  color: var(--textColor);
+  font-size: 20px;
+}
