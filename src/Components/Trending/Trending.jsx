@@ -10,7 +10,7 @@ import car3 from "../../Assets/6.png";
 
 const Trending = () => {
   return (
-    <div className="trending">
+    <div className="trending section">
       <div className="secContainer container">
         <div className="secHeading flex">
           <h3 className="secTitle">Trending Near you</h3>
