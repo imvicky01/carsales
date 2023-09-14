@@ -15,7 +15,6 @@
   --greyColor: #f4f4f4;
   --whiteColor: #f5f4fa;
   --blackColor: #434344;
-
 }
 
 li {
@@ -31,7 +30,6 @@ p {
   color: var(--textColor);
   line-height: 1.4rem;
 }
-
 
 .flex {
   display: grid;
@@ -85,6 +83,6 @@ img {
 }
 
 .secTitle {
-  color: var(--textColor);
+  color: var(--blackColor);
   font-size: 20px;
 }

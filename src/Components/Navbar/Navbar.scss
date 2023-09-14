@@ -1,120 +1,120 @@
 :root {
-    --primaryColor: #7a63f1;
-    --secondaryColour: #ebe8fc;
-    --textColor: #a3a3a3;
-    --greyColor: #f4f4f4;
-    --whiteColor: #f5f4fa;
-    --blackColor: #434344;
-
+  --primaryColor: #7a63f1;
+  --secondaryColour: #ebe8fc;
+  --textColor: #a3a3a3;
+  --greyColor: #f4f4f4;
+  --whiteColor: #f5f4fa;
+  --blackColor: #434344;
 }
 
 .header {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 1.5rem 2rem;
+  box-shadow: 0 4px 6px rgb(237, 237, 237);
+  z-index: 1000;
 
-    position: fixed;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    padding: 1.5rem 2rem;
-    box-shadow: 0 4px 6px rgb(237, 237, 237);
-    z-index: 1000;
+  .logoDiv {
+    .logo {
+      width: 25px;
+    }
+  }
 
-    .logoDiv {
-        .logo {
-            width: 25px;
+  @media screen and (max-width: 768px) {
+    .navbar {
+      position: absolute;
+      background: var(--secondaryColour);
+      width: 80%;
+      top: -100rem;
+      right: 50%;
+      left: 50%;
+      transform: translate(-50%);
+      border-radius: 10px;
+      text-align: center;
+      padding: 2rem;
+      transition: 0.3s ease;
+      z-index: 2000;
+
+      .closeIcon {
+        position: absolute;
+        bottom: -15px;
+        right: 50%;
+        left: 50%;
+        transform: translate(-50%);
+        background: var(--secondaryColour);
+        color: var(--primaryColor);
+        padding: 3px;
+        border-radius: 50%;
+        font-size: 35px;
+
+        &:hover {
+          color: red;
         }
+      }
     }
 
-    @media screen and (max-width: 768px) {
-        .navbar {
-            position: absolute;
-            background: var(--secondaryColour);
-            width: 80%;
-            top: -100rem;
-            right: 50%;
-            left: 50%;
-            transform: translate(-50%);
-            border-radius: 10px;
-            text-align: center;
-            padding: 2rem;
-            transition: .3s ease;
-            z-index: 2000;
+    .menu {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
 
-            .closeIcon {
-                position: absolute;
-                bottom: -15px;
-                right: 50%;
-                left: 50%;
-                transform: translate(-50%);
-                background: var(--secondaryColour);
-                color: var(--primaryColor);
-                padding: 3px;
-                border-radius: 50%;
-                font-size: 35px;
+      .listItem {
+        padding: 0.5rem 1rem;
+        border-radius: 10px;
+        cursor: pointer;
 
-                &:hover {
-                    color: red;
-                }
-            }
+        a {
+          font-size: 15px;
         }
 
-        .menu {
-            display: flex;
-            align-items: center;
-            flex-direction: column;
-
-            .listItem {
-                padding: .5rem 1rem;
-                border-radius: 10px;
-                cursor: pointer;
-
-                a {
-                    font-size: 15px;
-                }
-
-                &:hover {
-                    background: var(--primaryColor);
-                    color: var(--whiteColor);
-                    transition: .3s ease;
-
-                }
-
-                &:hover a {
-                    color: var(--whiteColor);
-                }
-
-            }
+        &:hover {
+          background: var(--primaryColor);
+          color: var(--whiteColor);
+          transition: 0.3s ease;
         }
+
+        &:hover a {
+          color: var(--whiteColor);
+        }
+      }
+    }
+  }
+
+  .signUp {
+    gap: 0.5rem;
+
+    .text {
+      padding: 3px 10px;
+      background: var(--primaryColor);
+      border-radius: 3px;
+      color: var(--whiteColor);
+      cursor: pointer;
+      font-size: 14px;
+
+      &:hover {
+        background: var(--secondaryColour);
+        color: var(--blackColor);
+      }
     }
 
-    .signUp {
-        gap: .5rem;
-
-        .text {
-            padding: 3px 10px;
-            background: var(--primaryColor);
-            border-radius: 3px;
-            color: var(--whiteColor);
-            cursor: pointer;
-            font-size: 14px;
-
-            &:hover {
-                background: var(--secondaryColour);
-                color: var(--blackColor);
-            }
-        }
-
-        .toggleNavbarIcon {
-            background: none;
-            color: var(--primaryColor);
-            font-weight: 600;
-            font-size: 25px;
-        }
+    .toggleNavbarIcon {
+      background: none;
+      color: var(--primaryColor);
+      font-weight: 600;
+      font-size: 25px;
     }
+  }
 
-    .showNavbar {
-        top: 7rem;
-        transition: .5s ease;
-    }
+  .showNavbar {
+    top: 7rem;
+    transition: 0.5s ease;
+  }
+}
 
+.addBg {
+  background: var(--secondaryColour);
+  box-shadow: none;
 }

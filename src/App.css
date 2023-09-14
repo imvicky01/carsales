@@ -1,12 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;400;600;700&display=swap");
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  transition: 0.2s ease-in-out;
-  font-family: "Titillium Web", sans-serif;
-}
-
 :root {
   --primaryColor: #7a63f1;
   --secondaryColour: #ebe8fc;
@@ -16,72 +7,93 @@
   --blackColor: #434344;
 }
 
-li {
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
-  cursor: pointer;
-}
-
-p {
-  color: var(--textColor);
-  line-height: 1.4rem;
-}
-
-.flex {
-  display: grid;
+.header {
+  position: fixed;
+  display: flex;
   align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 1.5rem 2rem;
+  box-shadow: 0 4px 6px rgb(237, 237, 237);
+  z-index: 1000;
 }
-
-.grid {
-  display: grid;
-  align-items: center;
+.header .logoDiv .logo {
+  width: 25px;
 }
-
-.btn {
-  border: none;
-  outline: none;
-  background: none;
-  cursor: pointer;
+@media screen and (max-width: 768px) {
+  .header .navbar {
+    position: absolute;
+    background: var(--secondaryColour);
+    width: 80%;
+    top: -100rem;
+    right: 50%;
+    left: 50%;
+    transform: translate(-50%);
+    border-radius: 10px;
+    text-align: center;
+    padding: 2rem;
+    transition: 0.3s ease;
+    z-index: 2000;
+  }
+  .header .navbar .closeIcon {
+    position: absolute;
+    bottom: -15px;
+    right: 50%;
+    left: 50%;
+    transform: translate(-50%);
+    background: var(--secondaryColour);
+    color: var(--primaryColor);
+    padding: 3px;
+    border-radius: 50%;
+    font-size: 35px;
+  }
+  .header .navbar .closeIcon:hover {
+    color: red;
+  }
+  .header .menu {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .header .menu .listItem {
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  .header .menu .listItem a {
+    font-size: 15px;
+  }
+  .header .menu .listItem:hover {
+    background: var(--primaryColor);
+    color: var(--whiteColor);
+    transition: 0.3s ease;
+  }
+  .header .menu .listItem:hover a {
+    color: var(--whiteColor);
+  }
 }
-
-.primaryBtn {
+.header .signUp {
+  gap: 0.5rem;
+}
+.header .signUp .text {
+  padding: 3px 10px;
   background: var(--primaryColor);
-  padding: 10px 15px;
-  border-radius: 10px;
-  font-weight: 600;
-  color: var(--blackColor);
-  font-size: 12px;
+  border-radius: 3px;
+  color: var(--whiteColor);
+  cursor: pointer;
+  font-size: 14px;
 }
-.primaryBtn:hover {
+.header .signUp .text:hover {
   background: var(--secondaryColour);
   color: var(--blackColor);
 }
-
-.container {
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
+.header .signUp .toggleNavbarIcon {
+  background: none;
+  color: var(--primaryColor);
+  font-weight: 600;
+  font-size: 25px;
 }
-
-.section {
-  padding: 4rem 0 2rem;
-}
-
-img {
-  width: 100%;
-  height: auto;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.icon {
-  font-size: 65px;
-  cursor: pointer;
-}
-
-.secTitle {
-  color: var(--textColor);
-  font-size: 20px;
+.header .showNavbar {
+  top: 7rem;
+  transition: 0.5s ease;
 }/*# sourceMappingURL=App.css.map */

@@ -92,4 +92,13 @@
   color: var(--primaryColor);
   font-weight: 600;
   font-size: 25px;
+}
+.header .showNavbar {
+  top: 7rem;
+  transition: 0.5s ease;
+}
+
+.addBg {
+  background: var(--secondaryColour);
+  box-shadow: none;
 }/*# sourceMappingURL=Navbar.css.map */

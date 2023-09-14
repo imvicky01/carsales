@@ -1,23 +1,30 @@
 import React, { useState } from "react";
 import "./Navbar.css";
-import logo from '../../Assets/logo.png'
-import { IoIosCloseCircle } from 'react-icons/io'
-import { TbGridDots } from 'react-icons/tb'
+import logo from "../../Assets/logo.png";
+import { IoIosCloseCircle } from "react-icons/io";
+import { TbGridDots } from "react-icons/tb";
 
 const Navbar = () => {
-
-  const [navbar, setnavbar] = useState('navbar')
+  const [navbar, setnavbar] = useState("navbar");
 
   const showNavbar = () => {
-    setnavbar('navbar')
-  }
+    setnavbar("navbar");
+  };
 
   const removeNavbar = () => {
-    setnavbar('navbar')
-  }
+    setnavbar("navbar");
+  };
+
+  const [header, setHeader] = useState("header");
+  const addBg = () => {
+    if (window.scrollY >= 20) {
+      setHeader("header addBg");
+    }
+  };
+  window.addEventListener("scroll", addBg);
 
   return (
-    <div className="header">
+    <div className={header}>
       <div className="logoDiv">
         <img src={logo} alt="logo image" className="logo" />
       </div>
@@ -45,11 +52,11 @@ const Navbar = () => {
           </li>
         </ul>
 
-        <IoIosCloseCircle className='icon closeIcon' onClick={removeNavbar} />
+        <IoIosCloseCircle className="icon closeIcon" onClick={removeNavbar} />
       </div>
       <div className="signUp flex">
         <div className="text">Sign Up</div>
-        <TbGridDots className='icon toggleNavbarIcon' onClick={showNavbar} />
+        <TbGridDots className="icon toggleNavbarIcon" onClick={showNavbar} />
       </div>
     </div>
   );
