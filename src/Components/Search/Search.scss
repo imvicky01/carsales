@@ -9,6 +9,7 @@
 
 .search {
   padding: 2rem 0;
+
   .title {
     color: var(--blackColor);
     font-size: 22px;
@@ -45,6 +46,60 @@
       .icon {
         font-size: 15px;
       }
+    }
+  }
+}
+
+@media screen and (min-width: 520px) {
+  .search {
+    .title {
+      font-size: 25px;
+      padding: 2rem 0;
+    }
+
+    .searchDiv {
+      input {
+        padding: 10px;
+        font-weight: 600;
+        color: var(--primaryColor);
+        border-radius: 3px;
+      }
+
+      .btn {
+        justify-content: center;
+        width: 100%;
+        align-items: center;
+        gap: .3rem;
+        font-size: 18px;
+
+        .icon {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 770px) {
+  .search {
+    .title {
+      font-size: 25rem;
+      padding: 2rem 0;
+    }
+
+    .searchDiv {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+}
+
+@media screen and (min-width: 770px) {
+  .search {
+    width: 80%;
+    margin: auto;
+
+    .searchDiv {
+      grid-template-columns: repeat(5, 1fr);
     }
   }
 }
