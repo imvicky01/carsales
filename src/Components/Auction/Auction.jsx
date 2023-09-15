@@ -8,8 +8,8 @@ import car1 from "../../Assets/1.png";
 import car2 from "../../Assets/2.png";
 import car3 from "../../Assets/8.png";
 import car4 from "../../Assets/9.png";
-import car5 from "../../Assets/10.png";
-import car6 from "../../Assets/11.png";
+import car5 from "../../Assets/6.png";
+import car6 from "../../Assets/7.png";
 
 const Auction = () => {
   return (
