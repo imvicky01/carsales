@@ -18,7 +18,7 @@ const Sellers = () => {
             grestest salesman in the world
           </p>
         </div>
-        <div className="sellersContainer">
+        <div className="sellersContainer grid">
           <div className="singleSeller flex">
             <div className="imgDiv flex">
               <img src={sellerImage1} alt="" className="img" />

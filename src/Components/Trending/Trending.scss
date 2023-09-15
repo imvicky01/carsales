@@ -35,7 +35,7 @@
       gap: 2rem;
 
       .singleCar {
-        transition: .3s ease-in-out;
+        transition: 0.3s ease-in-out;
         text-align: left;
 
         .imgDiv {
@@ -59,7 +59,7 @@
 
         .miles {
           color: var(--blackColor);
-          opacity: .7;
+          opacity: 0.7;
           font-size: 14px;
         }
 
@@ -67,7 +67,7 @@
           padding: 1rem 0;
           color: var(--blackColor);
           font-weight: 600;
-          font-size: 15px
+          font-size: 15px;
         }
 
         .price_seller {
@@ -76,7 +76,7 @@
 
         span {
           cursor: pointer;
-          padding: .5em 1rem;
+          padding: 0.5em 1rem;
           border-radius: 3px;
           font-weight: 600;
         }
@@ -88,9 +88,8 @@
 
         .seller {
           background: var(--greyColor);
-          color: var(--textColor)
+          color: var(--textColor);
         }
-
       }
 
       &:hover {
@@ -100,38 +99,59 @@
           border: 5px soild var(--primaryColor);
         }
       }
-
-
     }
   }
+}
+@media screen and (min-width: 520px) {
+  .trending {
+    .secContainer {
+      margin-bottom: 1rem;
 
-  @media screen and (min-width: 520px) {
-    .search {
-      .title {
-        font-size: 25px;
-        padding: 2rem 0;
+      .secTitle {
+        font-size: 23px;
       }
 
-      .searchDiv {
-        input {
-          padding: 10px;
-          font-weight: 600;
-          color: var(--primaryColor);
-          border-radius: 3px;
+      .navBtns {
+        gap: 0.5rem;
+        .icon {
+          font-size: 40px;
         }
+      }
+    }
+    .carContainer {
+      grid-template-columns: repeat(2, 1fr);
 
-        .btn {
-          justify-content: center;
-          width: 100%;
-          align-items: center;
-          gap: .3rem;
+      .singleCar {
+        .carTitle {
           font-size: 18px;
-
-          .icon {
-            font-size: 18px;
+        }
+        .miles,
+        .AWD {
+          font-size: 16px;
+        }
+        .price_seller {
+          span {
+            font-weight: 600;
           }
         }
       }
+    }
+  }
+}
+
+@media screen and (min-width: 940px) {
+  .trending {
+    .secContainer {
+      .secTitle {
+        font-size: 28px;
+      }
+
+      .navBtns {
+        gap: 1rem;
+      }
+    }
+    .carContainer {
+      grid-template-columns: repeat(3, 1fr);
     }
   }
 }
