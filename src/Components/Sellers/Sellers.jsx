@@ -1,16 +1,31 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Sellers.css";
 
 import sellerImage1 from "../../Assets/logo.png";
 import sellerImage2 from "../../Assets/logo.png";
 import sellerImage3 from "../../Assets/logo.png";
 import sellerImage4 from "../../Assets/logo.png";
+import Aos from 'aos'
+import 'aos/dist/aos.css'
+
 
 const Sellers = () => {
+
+
+
+  useEffect(() => {
+    Aos.init(
+      {
+        duration: 3000
+      }
+    )
+  }
+  )
+
   return (
     <div className="seller section">
       <div className="secContainer container">
-        <div className="secHeading grid">
+        <div data-aos='fade-up' className="secHeading grid">
           <h3 className="secTitle">Explore top sellers in town</h3>
           <p>
             {" "}
@@ -19,7 +34,7 @@ const Sellers = () => {
           </p>
         </div>
         <div className="sellersContainer grid">
-          <div className="singleSeller flex">
+          <div data-aos='fade-up' className="singleSeller flex">
             <div className="imgDiv flex">
               <img src={sellerImage1} alt="" className="img" />
             </div>
@@ -29,7 +44,7 @@ const Sellers = () => {
             </span>
           </div>
 
-          <div className="singleSeller flex">
+          <div data-aos='fade-up' className="singleSeller flex">
             <div className="imgDiv flex">
               <img src={sellerImage2} alt="" className="img" />
             </div>
@@ -39,7 +54,7 @@ const Sellers = () => {
             </span>
           </div>
 
-          <div className="singleSeller flex">
+          <div data-aos='fade-up' className="singleSeller flex">
             <div className="imgDiv flex">
               <img src={sellerImage3} alt="" className="img" />
             </div>
@@ -49,7 +64,7 @@ const Sellers = () => {
             </span>
           </div>
 
-          <div className="singleSeller flex">
+          <div data-aos='fade-up' className="singleSeller flex">
             <div className="imgDiv flex">
               <img src={sellerImage4} alt="" className="img" />
             </div>

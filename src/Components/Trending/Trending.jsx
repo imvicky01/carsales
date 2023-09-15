@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Trending.css";
 
 import { BsArrowLeftShort } from "react-icons/bs";
@@ -7,12 +7,26 @@ import { BsArrowRightShort } from "react-icons/bs";
 import car1 from "../../Assets/1.png";
 import car2 from "../../Assets/5.png";
 import car3 from "../../Assets/6.png";
+import Aos from 'aos'
+import 'aos/dist/aos.css'
+
+
 
 const Trending = () => {
+
+  useEffect(() => {
+    Aos.init(
+      {
+        duration: 3000
+      }
+    )
+  }
+  )
+
   return (
     <div className="trending section">
       <div className="secContainer container">
-        <div className="secHeading flex">
+        <div data-aos='fade-up' className="secHeading flex">
           <h3 className="secTitle">Trending Near you</h3>
 
           <div className="navBtns flex">
@@ -22,7 +36,7 @@ const Trending = () => {
         </div>
 
         <div className="carContainer grid">
-          <div className="singleCar grid">
+          <div data-aos='fade-up' className="singleCar grid">
             <div className="imgDiv">
               <img src={car1} alt="Car Image" />
             </div>
@@ -35,7 +49,7 @@ const Trending = () => {
               <span className="seller">Best seller</span>
             </div>
           </div>
-          <div className="singleCar grid">
+          <div data-aos='fade-up' className="singleCar grid">
             <div className="imgDiv">
               <img src={car2} alt="Car Image" />
             </div>
@@ -48,7 +62,7 @@ const Trending = () => {
               <span className="seller">Best seller</span>
             </div>
           </div>
-          <div className="singleCar grid">
+          <div data-aos='fade-up' className="singleCar grid">
             <div className="imgDiv">
               <img src={car3} alt="Car Image" />
             </div>

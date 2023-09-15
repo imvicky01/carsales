@@ -1,11 +1,23 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Footer.css";
 
+
 const Footer = () => {
+
+
+  useEffect(() => {
+    Aos.init(
+      {
+        duration: 3000
+      }
+    )
+  }
+
+  )
   return (
     <div className="footer">
       <div className="footerContainer container">
-        <div className="singleGrid">
+        <div data-aos='fade-up' className="singleGrid">
           <span className="footerTitle">About</span>
           <ul className="footerUl grid">
             <li className="footerLi">How it works</li>
@@ -14,7 +26,7 @@ const Footer = () => {
             <li className="footerLi">Media</li>
           </ul>
         </div>
-        <div className="singleGrid">
+        <div data-aos='fade-up' className="singleGrid">
           <span className="footerTitle">About</span>
           <ul className="footerUl grid">
             <li className="footerLi">How it works</li>
@@ -24,7 +36,7 @@ const Footer = () => {
           </ul>
         </div>
 
-        <div className="singleGrid">
+        <div data-aos='fade-up' className="singleGrid">
           <span className="footerTitle">Become Seller</span>
           <ul className="footerUl grid">
             <li className="footerLi">Add Vehicles</li>
@@ -34,7 +46,7 @@ const Footer = () => {
           </ul>
         </div>
 
-        <div className="singleGrid">
+        <div data-aos='fade-up' className="singleGrid">
           <span className="footerTitle">Community</span>
           <ul className="footerUl grid">
             <li className="footerLi">Recommendations</li>
@@ -44,7 +56,7 @@ const Footer = () => {
           </ul>
         </div>
 
-        <div className="singleGrid">
+        <div data-aos='fade-up' className="singleGrid">
           <span className="footerTitle">Booking Support</span>
           <ul className="footerUl grid">
             <li className="footerLi">Updates for Covid-19</li>

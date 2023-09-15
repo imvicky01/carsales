@@ -120,3 +120,87 @@
         }
     }
 }
+
+@media screen and (min-width: 520px) {
+    .review {
+        .secContainer {
+            .secHeading {
+                margin-top: 1rem;
+
+                .secTitle {
+                    font-size: 23px;
+                }
+
+                .navBtns {
+                    gap: .5rem;
+
+                    .icon {
+                        font-size: 40px;
+                    }
+                }
+            }
+
+            .reviewContainer {
+                grid-template-columns: repeat(2, 1fr);
+
+                .singleReview {
+                    .reviewTitle {
+                        font-size: 18px;
+                    }
+
+                    .desc {
+                        font-size: 16px;
+                    }
+
+                    .reviewerDiv {
+                        .leftDiv {
+                            .aboutReviewer {
+                                .name {
+                                    font-size: 17px;
+                                }
+
+                                p {
+                                    font-size: 16px;
+                                }
+                            }
+                        }
+
+                        .rightDiv {
+                            .icon {
+                                font: 16px;
+                            }
+
+                            blockquote {
+                                font-weight: 600;
+                                font-size: 17px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 940px) {
+    .review {
+        .secContainer {
+            .secHeading {
+
+                .secTitle {
+                    font-size: 23px;
+                }
+
+                .navBtns {
+                    gap: 1rem;
+
+                }
+            }
+
+            .reviewContainer {
+                grid-template-columns: repeat(2, 1fr);
+
+            }
+        }
+    }
+}
