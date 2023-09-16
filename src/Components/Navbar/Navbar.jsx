@@ -5,14 +5,14 @@ import { IoIosCloseCircle } from "react-icons/io";
 import { TbGridDots } from "react-icons/tb";
 
 const Navbar = () => {
-  const [navbar, setnavbar] = useState("navbar");
+  const [navbar, setNavbar] = useState("navbar");
 
   const showNavbar = () => {
-    setnavbar("navbar");
+    setNavbar("navbar showNavbar");
   };
 
   const removeNavbar = () => {
-    setnavbar("navbar");
+    setNavbar("navbar");
   };
 
   const [header, setHeader] = useState("header");

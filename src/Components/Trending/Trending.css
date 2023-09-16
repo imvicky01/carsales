@@ -62,62 +62,62 @@
 .trending .secContainer .carContainer .singleCar .price_seller {
   gap: 1rem;
 }
-.trending .secContainer .carContainer .singleCar span {
+.trending .secContainer .carContainer .singleCar .price_seller span {
   cursor: pointer;
   padding: 0.5em 1rem;
   border-radius: 3px;
   font-weight: 600;
 }
-.trending .secContainer .carContainer .singleCar .price {
+.trending .secContainer .carContainer .singleCar .price_seller .price {
   background: var(--secondaryColour);
   color: var(--primaryColor);
 }
-.trending .secContainer .carContainer .singleCar .seller {
+.trending .secContainer .carContainer .singleCar .price_seller .seller {
   background: var(--greyColor);
   color: var(--textColor);
 }
-.trending .secContainer .carContainer:hover {
+.trending .secContainer .carContainer .singleCar:hover {
   transform: translateY(-7px);
 }
-.trending .secContainer .carContainer:hover .imgDiv {
+.trending .secContainer .carContainer .singleCar:hover .imgDiv {
   border: 5px soild var(--primaryColor);
 }
 
 @media screen and (min-width: 520px) {
-  .trending .secContainer {
+  .trending .secContainer .secHeading {
     margin-bottom: 1rem;
   }
-  .trending .secContainer .secTitle {
+  .trending .secContainer .secHeading .secTitle {
     font-size: 23px;
   }
-  .trending .secContainer .navBtns {
+  .trending .secContainer .secHeading .navBtns {
     gap: 0.5rem;
   }
-  .trending .secContainer .navBtns .icon {
+  .trending .secContainer .secHeading .navBtns .icon {
     font-size: 40px;
   }
-  .trending .carContainer {
+  .trending .secContainer .carContainer {
     grid-template-columns: repeat(2, 1fr);
   }
-  .trending .carContainer .singleCar .carTitle {
+  .trending .secContainer .carContainer .singleCar .carTitle {
     font-size: 18px;
   }
-  .trending .carContainer .singleCar .miles,
-  .trending .carContainer .singleCar .AWD {
+  .trending .secContainer .carContainer .singleCar .miles,
+  .trending .secContainer .carContainer .singleCar .AWD {
     font-size: 16px;
   }
-  .trending .carContainer .singleCar .price_seller span {
+  .trending .secContainer .carContainer .singleCar .price_seller span {
     font-weight: 600;
   }
 }
 @media screen and (min-width: 940px) {
-  .trending .secContainer .secTitle {
+  .trending .secContainer .secHeading .secTitle {
     font-size: 28px;
   }
-  .trending .secContainer .navBtns {
+  .trending .secContainer .secHeading .navBtns {
     gap: 1rem;
   }
-  .trending .carContainer {
+  .trending .secContainer .carContainer {
     grid-template-columns: repeat(3, 1fr);
   }
 }/*# sourceMappingURL=Trending.css.map */

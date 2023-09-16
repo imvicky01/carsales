@@ -72,31 +72,31 @@
 
         .price_seller {
           gap: 1rem;
+
+          span {
+            cursor: pointer;
+            padding: 0.5em 1rem;
+            border-radius: 3px;
+            font-weight: 600;
+          }
+
+          .price {
+            background: var(--secondaryColour);
+            color: var(--primaryColor);
+          }
+
+          .seller {
+            background: var(--greyColor);
+            color: var(--textColor);
+          }
         }
 
-        span {
-          cursor: pointer;
-          padding: 0.5em 1rem;
-          border-radius: 3px;
-          font-weight: 600;
-        }
+        &:hover {
+          transform: translateY(-7px);
 
-        .price {
-          background: var(--secondaryColour);
-          color: var(--primaryColor);
-        }
-
-        .seller {
-          background: var(--greyColor);
-          color: var(--textColor);
-        }
-      }
-
-      &:hover {
-        transform: translateY(-7px);
-
-        .imgDiv {
-          border: 5px soild var(--primaryColor);
+          .imgDiv {
+            border: 5px soild var(--primaryColor);
+          }
         }
       }
     }
@@ -105,33 +105,35 @@
 @media screen and (min-width: 520px) {
   .trending {
     .secContainer {
-      margin-bottom: 1rem;
+      .secHeading {
+        margin-bottom: 1rem;
 
-      .secTitle {
-        font-size: 23px;
-      }
+        .secTitle {
+          font-size: 23px;
+        }
 
-      .navBtns {
-        gap: 0.5rem;
-        .icon {
-          font-size: 40px;
+        .navBtns {
+          gap: 0.5rem;
+          .icon {
+            font-size: 40px;
+          }
         }
       }
-    }
-    .carContainer {
-      grid-template-columns: repeat(2, 1fr);
+      .carContainer {
+        grid-template-columns: repeat(2, 1fr);
 
-      .singleCar {
-        .carTitle {
-          font-size: 18px;
-        }
-        .miles,
-        .AWD {
-          font-size: 16px;
-        }
-        .price_seller {
-          span {
-            font-weight: 600;
+        .singleCar {
+          .carTitle {
+            font-size: 18px;
+          }
+          .miles,
+          .AWD {
+            font-size: 16px;
+          }
+          .price_seller {
+            span {
+              font-weight: 600;
+            }
           }
         }
       }
@@ -142,16 +144,18 @@
 @media screen and (min-width: 940px) {
   .trending {
     .secContainer {
-      .secTitle {
-        font-size: 28px;
-      }
+      .secHeading {
+        .secTitle {
+          font-size: 28px;
+        }
 
-      .navBtns {
-        gap: 1rem;
+        .navBtns {
+          gap: 1rem;
+        }
       }
-    }
-    .carContainer {
-      grid-template-columns: repeat(3, 1fr);
+      .carContainer {
+        grid-template-columns: repeat(3, 1fr);
+      }
     }
   }
 }

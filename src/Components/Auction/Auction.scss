@@ -98,26 +98,26 @@
             color: var(--textColor);
           }
         }
-
-        &:hover {
-          transform: translateY(-7px);
-          padding: 1rem;
-          background: var(--secondaryColour);
-
-          .price_buyBtn {
-            border: 1px soild var(--primaryColor);
-          }
-        }
       }
 
-      .singleCarActive {
+      &:hover {
+        transform: translateY(-7px);
         padding: 1rem;
         background: var(--secondaryColour);
 
         .price_buyBtn {
-          span {
-            border: 1px solid var(--primaryColor);
-          }
+          border: 1px soild var(--primaryColor);
+        }
+      }
+    }
+
+    .singleCarActive {
+      padding: 1rem;
+      background: var(--secondaryColour);
+
+      .price_buyBtn {
+        span {
+          border: 1px solid var(--primaryColor);
         }
       }
     }
@@ -127,39 +127,37 @@
 @media screen and (min-width: 520px) {
   .auction {
     .secContainer {
-      .secContainer {
-        .secHeading {
-          margin-top: 1rem;
+      .secHeading {
+        margin-top: 1rem;
 
-          .secTitle {
-            font-size: 23px;
-          }
-
-          .navBtns {
-            gap: 0.5rem;
-
-            .icon {
-              font-size: 40px;
-            }
-          }
+        .secTitle {
+          font-size: 23px;
         }
 
-        .carContainer {
-          grid-template-columns: repeat(2, 1fr);
+        .navBtns {
+          gap: 0.5rem;
 
-          .singlecar {
-            .carTitle {
-              font-size: 18px;
-            }
+          .icon {
+            font-size: 40px;
+          }
+        }
+      }
 
-            .miles,
-            .AWD {
-              font-size: 16px;
-            }
+      .carContainer {
+        grid-template-columns: repeat(2, 1fr);
 
-            .price_buyBtn {
-              font-weight: 600;
-            }
+        .singlecar {
+          .carTitle {
+            font-size: 18px;
+          }
+
+          .miles,
+          .AWD {
+            font-size: 16px;
+          }
+
+          .price_buyBtn {
+            font-weight: 600;
           }
         }
       }
@@ -182,9 +180,7 @@
 
       .carContainer {
         grid-template-columns: repeat(3, 1fr);
-
       }
     }
-
   }
 }

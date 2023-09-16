@@ -68,29 +68,77 @@
   border-radius: 50%;
   box-shadow: 0 4px 5px rgb(222, 222, 222);
 }
-.review .secContainer .reviewContainer .singleReview .reviewerDiv .leftDiv .reviewerImage .aboutReviewer .name {
+.review .secContainer .reviewContainer .singleReview .reviewerDiv .leftDiv .aboutReviewer .name {
   color: var(--blackColor);
   font-weight: 600;
   padding-bottom: 0.5rem;
   font-size: 15px;
 }
-.review .secContainer .reviewContainer .singleReview .reviewerDiv .leftDiv .reviewerImage .aboutReviewer p {
+.review .secContainer .reviewContainer .singleReview .reviewerDiv .leftDiv .aboutReviewer p {
   color: var(--textColor);
   font-size: 14px;
 }
-.review .secContainer .reviewContainer .singleReview .reviewerDiv .leftDiv .rightDiv {
+.review .secContainer .reviewContainer .singleReview .reviewerDiv .rightDiv {
   gap: 0.3rem;
 }
-.review .secContainer .reviewContainer .singleReview .reviewerDiv .leftDiv .rightDiv .icon {
+.review .secContainer .reviewContainer .singleReview .reviewerDiv .rightDiv .icon {
   color: rgb(255, 165, 0);
 }
-.review .secContainer .reviewContainer .singleReview .reviewerDiv .leftDiv .rightDiv blockquote {
+.review .secContainer .reviewContainer .singleReview .reviewerDiv .rightDiv blockquote {
   font-size: 14px;
   font-weight: 600;
 }
-.review .secContainer .reviewContainer .singleReview .reviewerDiv:hover {
+.review .secContainer .reviewContainer .singleReview:hover {
   transform: translateY(-7px);
 }
-.review .secContainer .reviewContainer .singleReview .reviewerDiv:hover .imgDiv {
+.review .secContainer .reviewContainer .singleReview:hover .imgDiv {
   border: 5px solid var(--primaryColor);
+}
+
+@media screen and (min-width: 520px) {
+  .review .secContainer .secHeading {
+    margin-top: 1rem;
+  }
+  .review .secContainer .secHeading .secTitle {
+    font-size: 23px;
+  }
+  .review .secContainer .secHeading .navBtns {
+    gap: 0.5rem;
+  }
+  .review .secContainer .secHeading .navBtns .icon {
+    font-size: 40px;
+  }
+  .review .secContainer .reviewContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .review .secContainer .reviewContainer .singleReview .reviewTitle {
+    font-size: 18px;
+  }
+  .review .secContainer .reviewContainer .singleReview .desc {
+    font-size: 16px;
+  }
+  .review .secContainer .reviewContainer .singleReview .reviewerDiv .leftDiv .aboutReviewer .name {
+    font-size: 17px;
+  }
+  .review .secContainer .reviewContainer .singleReview .reviewerDiv .leftDiv .aboutReviewer p {
+    font-size: 16px;
+  }
+  .review .secContainer .reviewContainer .singleReview .reviewerDiv .rightDiv .icon {
+    font-size: 16px;
+  }
+  .review .secContainer .reviewContainer .singleReview .reviewerDiv .rightDiv blockquote {
+    font-weight: 600;
+    font-size: 17px;
+  }
+}
+@media screen and (min-width: 940px) {
+  .review .secContainer .secHeading .secTitle {
+    font-size: 23px;
+  }
+  .review .secContainer .secHeading .navBtns {
+    gap: 1rem;
+  }
+  .review .secContainer .reviewContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }/*# sourceMappingURL=Review.css.map */

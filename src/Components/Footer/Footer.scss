@@ -4,7 +4,7 @@
   --textColor: #a3a3a3;
   --greyColor: #f4f4f4;
   --whiteColor: #f5f4fa;
-  --blackColor: #434344;
+  --blackColor: #0e0d13;
 }
 
 .footer {
@@ -42,14 +42,14 @@
       }
     }
 
-    .lowerDiv {
+    .lowerSection {
       padding: 1rem;
       text-align: center;
     }
   }
 }
 
-@media screen and (min-width: 770px) {
+@media screen and (min-width: 520px) {
   .footer {
     .footerContainer {
       .footerMenuDiv {
@@ -59,7 +59,6 @@
           margin: auto;
 
           .footerTitle {
-
             font-size: 17px;
           }
 
@@ -82,7 +81,7 @@
   }
 }
 
-@media screen and (min-width: 520px) {
+@media screen and (min-width: 770px) {
   .footer {
     .footerContainer {
       .footerMenuDiv {

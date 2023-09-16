@@ -10,27 +10,20 @@ import car3 from "../../Assets/8.png";
 import car4 from "../../Assets/9.png";
 import car5 from "../../Assets/6.png";
 import car6 from "../../Assets/7.png";
-import Aos from 'aos'
-import 'aos/dist/aos.css'
-
-
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const Auction = () => {
-
-
   useEffect(() => {
-    Aos.init(
-      {
-        duration: 3000
-      }
-    )
-  }
-  )
+    Aos.init({
+      duration: 3000,
+    });
+  }, []);
 
   return (
     <div className="auction section">
       <div className="secContainer container">
-        <div data-aos='fade-up' className="secHeading flex">
+        <div data-aos="fade-up" className="secHeading flex">
           <h3 className="secTitle">Active Auctions</h3>
 
           <div className="navBtns flex">
@@ -40,7 +33,7 @@ const Auction = () => {
         </div>
 
         <div className="carContainer grid singleCarActive">
-          <div data-aos='fade-up' className="singleCar grid">
+          <div className="singleCar grid" data-aos="fade-up">
             <div className="imgDiv">
               <img src={car1} alt="Car Image" />
             </div>
@@ -54,7 +47,7 @@ const Auction = () => {
             </div>
           </div>
 
-          <div data-aos='fade-up' className="singleCar grid singleCarActive">
+          <div className="singleCar grid singleCarActive" data-aos="fade-up">
             <div className="imgDiv">
               <img src={car2} alt="Car Image" />
             </div>
@@ -68,7 +61,7 @@ const Auction = () => {
             </div>
           </div>
 
-          <div data-aos='fade-up' className="singleCar grid">
+          <div className="singleCar grid" data-aos="fade-up">
             <div className="imgDiv">
               <img src={car3} alt="Car Image" />
             </div>
@@ -82,7 +75,7 @@ const Auction = () => {
             </div>
           </div>
 
-          <div data-aos='fade-up' className="singleCar grid singleCarActive">
+          <div className="singleCar grid singleCarActive" data-aos="fade-up">
             <div className="imgDiv">
               <img src={car4} alt="Car Image" />
             </div>
@@ -96,7 +89,7 @@ const Auction = () => {
             </div>
           </div>
 
-          <div data-aos='fade-up' className="singleCar grid">
+          <div className="singleCar grid" data-aos="fade-up">
             <div className="imgDiv">
               <img src={car5} alt="Car Image" />
             </div>
@@ -110,7 +103,7 @@ const Auction = () => {
             </div>
           </div>
 
-          <div data-aos='fade-up' className="singleCar grid singleCarActive">
+          <div className="singleCar grid singleCarActive" data-aos="fade-up">
             <div className="imgDiv">
               <img src={car6} alt="Car Image" />
             </div>

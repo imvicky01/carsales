@@ -5,36 +5,28 @@ import sellerImage1 from "../../Assets/logo.png";
 import sellerImage2 from "../../Assets/logo.png";
 import sellerImage3 from "../../Assets/logo.png";
 import sellerImage4 from "../../Assets/logo.png";
-import Aos from 'aos'
-import 'aos/dist/aos.css'
-
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const Sellers = () => {
-
-
-
   useEffect(() => {
-    Aos.init(
-      {
-        duration: 3000
-      }
-    )
-  }
-  )
+    Aos.init({
+      duration: 3000,
+    });
+  }, []);
 
   return (
     <div className="seller section">
       <div className="secContainer container">
-        <div data-aos='fade-up' className="secHeading grid">
+        <div data-aos="fade-up" className="secHeading grid">
           <h3 className="secTitle">Explore top sellers in town</h3>
           <p>
-            {" "}
             Joseph samuel girad holds the guinness world record for being the
             grestest salesman in the world
           </p>
         </div>
         <div className="sellersContainer grid">
-          <div data-aos='fade-up' className="singleSeller flex">
+          <div data-aos="fade-up" className="singleSeller flex">
             <div className="imgDiv flex">
               <img src={sellerImage1} alt="" className="img" />
             </div>
@@ -44,7 +36,7 @@ const Sellers = () => {
             </span>
           </div>
 
-          <div data-aos='fade-up' className="singleSeller flex">
+          <div data-aos="fade-up" className="singleSeller flex">
             <div className="imgDiv flex">
               <img src={sellerImage2} alt="" className="img" />
             </div>
@@ -54,7 +46,7 @@ const Sellers = () => {
             </span>
           </div>
 
-          <div data-aos='fade-up' className="singleSeller flex">
+          <div data-aos="fade-up" className="singleSeller flex">
             <div className="imgDiv flex">
               <img src={sellerImage3} alt="" className="img" />
             </div>
@@ -64,7 +56,7 @@ const Sellers = () => {
             </span>
           </div>
 
-          <div data-aos='fade-up' className="singleSeller flex">
+          <div data-aos="fade-up" className="singleSeller flex">
             <div className="imgDiv flex">
               <img src={sellerImage4} alt="" className="img" />
             </div>
