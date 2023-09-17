@@ -10,26 +10,26 @@
 .footer {
   padding-top: 4rem;
 }
-.footer .footerContainer .footerMenuDiv {
+.footer .footerContainer .footterMenuDiv {
   padding: 2rem;
   background: var(--greyColor);
   border-radius: 10px;
   gap: 1.5rem;
 }
-.footer .footerContainer .footerMenuDiv .singleGrid .footerTitle {
+.footer .footerContainer .footterMenuDiv .singleGrid .footerTitle {
   display: block;
   padding-bottom: 0.5rem;
   font-size: 16px;
   color: var(--blackColor);
   font-weight: 700;
 }
-.footer .footerContainer .footerMenuDiv .singleGrid .footerUl {
+.footer .footerContainer .footterMenuDiv .singleGrid .footerUl {
   gap: 5px;
 }
-.footer .footerContainer .footerMenuDiv .singleGrid .footerUl .footerLi {
+.footer .footerContainer .footterMenuDiv .singleGrid .footerUl .footerLi {
   color: var(--textColor);
 }
-.footer .footerContainer .footerMenuDiv .singleGrid .footerUl .footerLi:hover {
+.footer .footerContainer .footterMenuDiv .singleGrid .footerUl .footerLi:hover {
   color: var(--blackColor);
   transform: translateX(5px);
   transition: 0.3s;

@@ -20,6 +20,7 @@ const Review = () => {
       duration: 3000,
     });
   }, []);
+
   return (
     <div className="review section">
       <div className="secContainer container">
@@ -38,10 +39,10 @@ const Review = () => {
             <h5 className="reviewTitle">2023 Cadiallac</h5>
             <span className="desc">
               Good cars are safe, fast, affordable to purchase, economical to
-              operate,reliable, capapcios, comfortable and attractive.
+              operate, reliable, capacious, comfortable, and attractive.
             </span>
 
-            <div className="reviewweDiv flex">
+            <div className="reviewerDiv flex">
               <div className="leftDiv flex">
                 <div className="reviewerImage">
                   <img src={user1} alt="Reviewer Image" />
@@ -57,58 +58,58 @@ const Review = () => {
               </div>
             </div>
           </div>
-        </div>
 
-        <div className="singleReview grid" data-aos="fade-up">
-          <div className="imgDiv">
-            <img src={car2} alt="Car Image" />
-          </div>
-          <h5 className="reviewTitle">2023 Cadiallac</h5>
-          <span className="desc">
-            Good cars are safe, fast, affordable to purchase, economical to
-            operate,reliable, capapcios, comfortable and attractive.
-          </span>
+          <div className="singleReview grid" data-aos="fade-up">
+            <div className="imgDiv">
+              <img src={car2} alt="Car Image" />
+            </div>
+            <h5 className="reviewTitle">2023 Cadiallac</h5>
+            <span className="desc">
+              Good cars are safe, fast, affordable to purchase, economical to
+              operate, reliable, capacious, comfortable, and attractive.
+            </span>
 
-          <div className="reviewweDiv flex">
-            <div className="leftDiv flex">
-              <div className="reviewerImage">
-                <img src={user2} alt="Reviewer Image" />
+            <div className="reviewerDiv flex">
+              <div className="leftDiv flex">
+                <div className="reviewerImage">
+                  <img src={user2} alt="Reviewer Image" />
+                </div>
+                <div className="aboutReviewer">
+                  <span className="name">Jakline Nelson</span>
+                  <p>Chief Editor</p>
+                </div>
               </div>
-              <div className="aboutReviewer">
-                <span className="name">Jakline Nelson</span>
-                <p>Chief Editor</p>
+              <div className="rightDiv flex">
+                <AiFillStar className="icon" />
+                <blockquote>4.84</blockquote>
               </div>
             </div>
-            <div className="rightDiv flex">
-              <AiFillStar className="icon" />
-              <blockquote>4.84</blockquote>
-            </div>
           </div>
-        </div>
 
-        <div className="singleReview grid" data-aos="fade-up">
-          <div className="imgDiv">
-            <img src={car3} alt="Car Image" />
-          </div>
-          <h5 className="reviewTitle">2023 Cadiallac</h5>
-          <span className="desc">
-            Good cars are safe, fast, affordable to purchase, economical to
-            operate,reliable, capapcios, comfortable and attractive.
-          </span>
-
-          <div className="reviewweDiv flex">
-            <div className="leftDiv flex">
-              <div className="reviewerImage">
-                <img src={user3} alt="Reviewer Image" />
-              </div>
-              <div className="aboutReviewer">
-                <span className="name">Jakline Nelson</span>
-                <p>Chief Editor</p>
-              </div>
+          <div className="singleReview grid" data-aos="fade-up">
+            <div className="imgDiv">
+              <img src={car3} alt="Car Image" />
             </div>
-            <div className="rightDiv flex">
-              <AiFillStar className="icon" />
-              <blockquote>4.84</blockquote>
+            <h5 className="reviewTitle">2023 Cadiallac</h5>
+            <span className="desc">
+              Good cars are safe, fast, affordable to purchase, economical to
+              operate, reliable, capacious, comfortable, and attractive.
+            </span>
+
+            <div className="reviewerDiv flex">
+              <div className="leftDiv flex">
+                <div className="reviewerImage">
+                  <img src={user3} alt="Reviewer Image" />
+                </div>
+                <div className="aboutReviewer">
+                  <span className="name">Jakline Nelson</span>
+                  <p>Chief Editor</p>
+                </div>
+              </div>
+              <div className="rightDiv flex">
+                <AiFillStar className="icon" />
+                <blockquote>4.84</blockquote>
+              </div>
             </div>
           </div>
         </div>

@@ -2,8 +2,6 @@
   --primaryColor: #7a63f1;
   --secondaryColour: #ebe8fc;
   --textColor: #a3a3a3;
-  --greyColor: #f4f4f4;
-  --whiteColor: #f5f4fa;
   --blackColor: #434344;
 }
 
@@ -25,7 +23,7 @@
 
           &:hover {
             background: var(--primaryColor);
-            color: var(--whiteColor);
+            color: white;
           }
         }
       }
@@ -35,7 +33,7 @@
       gap: 1.5rem;
 
       .singleReview {
-        transition: 0.3s ease-in-out;
+        transition: transform 0.3s ease-in-out;
 
         .imgDiv {
           height: 200px;
@@ -47,6 +45,7 @@
           img {
             height: 100%;
             width: 100%;
+            object-fit: cover;
           }
         }
 
@@ -77,6 +76,12 @@
               overflow: hidden;
               border-radius: 50%;
               box-shadow: 0 4px 5px rgb(222, 222, 222);
+
+              img {
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+              }
             }
 
             .aboutReviewer {
@@ -176,26 +181,6 @@
             }
           }
         }
-      }
-    }
-  }
-}
-
-@media screen and (min-width: 940px) {
-  .review {
-    .secContainer {
-      .secHeading {
-        .secTitle {
-          font-size: 23px;
-        }
-
-        .navBtns {
-          gap: 1rem;
-        }
-      }
-
-      .reviewContainer {
-        grid-template-columns: repeat(2, 1fr);
       }
     }
   }

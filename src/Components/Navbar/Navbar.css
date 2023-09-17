@@ -18,11 +18,11 @@
   z-index: 1000;
 }
 .header .logoDiv .logo {
-  width: 25px;
+  width: 50px;
 }
 @media screen and (max-width: 768px) {
   .header .navbar {
-    position: absolute;
+    position: fixed;
     background: var(--secondaryColour);
     width: 80%;
     top: -100%;

@@ -65,7 +65,7 @@ const Footer = () => {
 
         <div className="lowerSection grid">
           <p>2023 All right reserved</p>
-          <blockquote>IsraTech Projects</blockquote>
+          <blockquote>vicky Projects</blockquote>
         </div>
       </div>
     </div>

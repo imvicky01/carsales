@@ -16,13 +16,13 @@ const Sellers = () => {
   }, []);
 
   return (
-    <div className="seller section">
+    <div className="sellers section">
       <div className="secContainer container">
         <div data-aos="fade-up" className="secHeading grid">
           <h3 className="secTitle">Explore top sellers in town</h3>
           <p>
-            Joseph samuel girad holds the guinness world record for being the
-            grestest salesman in the world
+            Joseph Samuel Girard holds the Guinness World Record for being the
+            greatest salesman in the world.
           </p>
         </div>
         <div className="sellersContainer grid">
@@ -41,7 +41,7 @@ const Sellers = () => {
               <img src={sellerImage2} alt="" className="img" />
             </div>
             <span className="info">
-              <h4 className="name">Mercedes benz</h4>
+              <h4 className="name">Mercedes Benz</h4>
               <p>from $50k</p>
             </span>
           </div>

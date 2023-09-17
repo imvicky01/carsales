@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import "./Auction.css";
+import { Link } from "react-router-dom"; // Import Link from react-router-dom
 
 import { BsArrowLeftShort } from "react-icons/bs";
 import { BsArrowRightShort } from "react-icons/bs";
@@ -43,7 +44,9 @@ const Auction = () => {
 
             <div className="price_buyBtn flex">
               <span className="price">$41,200</span>
+              {/* <Link to="/navbar-page"> */}
               <span className="buybtn">buy now</span>
+              {/* </Link> */}
             </div>
           </div>
 

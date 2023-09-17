@@ -8,6 +8,8 @@ import Trending from "./Components/Trending/Trending";
 import Sellers from "./Components/Sellers/Sellers";
 import Review from "./Components/Review/Review";
 import Footer from "./Components/Footer/Footer";
+// import "bootstrap-icons/font/bootstrap-icons.css";
+// // import "./css/main.min.css";
 
 const App = () => {
   return (

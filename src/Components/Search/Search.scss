@@ -1,12 +1,4 @@
-:root {
-  --primaryColor: #7a63f1;
-  --secondaryColour: #ebe8fc;
-  --textColor: #a3a3a3;
-  --greyColor: #ebe8fc;
-  --whiteColor: #f5f4fa;
-  --blackColor: #0e0d13;
-}
-
+/* Define your custom styles here */
 .search {
   padding: 2rem 0;
 
@@ -32,7 +24,6 @@
       width: 100%;
 
       &:focus {
-        border: none;
         border: 1px solid var(--primaryColor);
       }
     }
@@ -66,6 +57,7 @@
       }
 
       .btn {
+        display: flex;
         justify-content: center;
         width: 100%;
         align-items: center;
@@ -80,26 +72,4 @@
   }
 }
 
-@media screen and (min-width: 770px) {
-  .search {
-    .title {
-      font-size: 30rem;
-      padding: 2rem 0;
-    }
-
-    .searchDiv {
-      grid-template-columns: repeat(3, 1fr);
-    }
-  }
-}
-
-@media screen and (min-width: 770px) {
-  .search {
-    width: 80%;
-    margin: auto;
-
-    .searchDiv {
-      grid-template-columns: repeat(5, 1fr);
-    }
-  }
-}
+/* Add more media queries for responsive design as needed */

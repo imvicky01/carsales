@@ -2,8 +2,6 @@
   --primaryColor: #7a63f1;
   --secondaryColour: #ebe8fc;
   --textColor: #a3a3a3;
-  --greyColor: #f4f4f4;
-  --whiteColor: #f5f4fa;
   --blackColor: #434344;
 }
 
@@ -23,13 +21,13 @@
 }
 .review .secContainer .secHeading .navBtns .icon:hover {
   background: var(--primaryColor);
-  color: var(--whiteColor);
+  color: white;
 }
 .review .secContainer .reviewContainer {
   gap: 1.5rem;
 }
 .review .secContainer .reviewContainer .singleReview {
-  transition: 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
 }
 .review .secContainer .reviewContainer .singleReview .imgDiv {
   height: 200px;
@@ -41,6 +39,8 @@
 .review .secContainer .reviewContainer .singleReview .imgDiv img {
   height: 100%;
   width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .review .secContainer .reviewContainer .singleReview .reviewTitle {
   color: var(--blackColor);
@@ -67,6 +67,12 @@
   overflow: hidden;
   border-radius: 50%;
   box-shadow: 0 4px 5px rgb(222, 222, 222);
+}
+.review .secContainer .reviewContainer .singleReview .reviewerDiv .leftDiv .reviewerImage img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .review .secContainer .reviewContainer .singleReview .reviewerDiv .leftDiv .aboutReviewer .name {
   color: var(--blackColor);
@@ -129,16 +135,5 @@
   .review .secContainer .reviewContainer .singleReview .reviewerDiv .rightDiv blockquote {
     font-weight: 600;
     font-size: 17px;
-  }
-}
-@media screen and (min-width: 940px) {
-  .review .secContainer .secHeading .secTitle {
-    font-size: 23px;
-  }
-  .review .secContainer .secHeading .navBtns {
-    gap: 1rem;
-  }
-  .review .secContainer .reviewContainer {
-    grid-template-columns: repeat(2, 1fr);
   }
 }/*# sourceMappingURL=Review.css.map */
