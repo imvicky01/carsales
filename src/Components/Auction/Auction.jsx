@@ -44,9 +44,9 @@ const Auction = () => {
 
             <div className="price_buyBtn flex">
               <span className="price">$41,200</span>
-              {/* <Link to="/navbar-page"> */}
-              <span className="buybtn">buy now</span>
-              {/* </Link> */}
+              <Link to="/navbar-page">
+                <span className="buybtn">buy now</span>
+              </Link>
             </div>
           </div>
 
