@@ -1,0 +1,59 @@
+/* Lightbox.scss */
+.lightbox-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  overflow: hidden;
+}
+.lightbox-container .lightbox-slider {
+  position: relative;
+  max-width: 90%;
+  max-height: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.lightbox-container .lightbox-slider img {
+  max-width: 100%;
+  max-height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.lightbox-container .lightbox-slider .prev-button,
+.lightbox-container .lightbox-slider .next-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+}
+.lightbox-container .lightbox-slider .prev-button {
+  left: 10px;
+}
+.lightbox-container .lightbox-slider .next-button {
+  right: 10px;
+}
+.lightbox-container .close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+}/*# sourceMappingURL=Lightbox.css.map */
