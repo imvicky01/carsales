@@ -1,67 +1,164 @@
-// NavbarPage.jsx
-import React, { useState } from "react";
-import "./NavbarPage.scss"; // Import the SCSS file
-import Image1 from "../../Assets/14.jpg";
-import Image2 from "../../Assets/15.jpg";
-import Image3 from "../../Assets/16.jpg";
-import Image4 from "../../Assets/17.jpg";
-import Lightbox from "./Lightbox.jsx"; // Import the Lightbox component
+import React, { useEffect } from "react";
+import "./navbarpage.css";
+import image1 from "../../Assets/shoe_1.jpg";
+import image2 from "../../Assets/shoe_2.jpg";
+import image3 from "../../Assets/shoe_3.jpg";
+import image4 from "../../Assets/shoe_4.jpg";
 
 const NavbarPage = () => {
-  const [showLightbox, setShowLightbox] = useState(false);
-  const [slideIndex, setSlideIndex] = useState(0);
+  useEffect(() => {
+    const imgs = document.querySelectorAll(".img-select a");
+    const imgBtns = [...imgs];
+    let imgId = 1;
 
-  const openLightbox = (index) => {
-    setSlideIndex(index);
-    setShowLightbox(true);
-  };
+    imgBtns.forEach((imgItem) => {
+      imgItem.addEventListener("click", (event) => {
+        event.preventDefault();
+        imgId = imgItem.dataset.id;
+        slideImage();
+      });
+    });
 
-  const nextSlide = () => {
-    setSlideIndex((prevIndex) => (prevIndex + 1) % images.length);
-  };
+    function slideImage() {
+      const displayWidth = document.querySelector(
+        ".img-showcase img:first-child"
+      ).clientWidth;
 
-  const previousSlide = () => {
-    setSlideIndex(
-      (prevIndex) => (prevIndex - 1 + images.length) % images.length
-    );
-  };
+      document.querySelector(".img-showcase").style.transform = `translateX(${
+        -(imgId - 1) * displayWidth
+      }px)`;
+    }
 
-  const images = [Image1, Image2, Image3, Image4];
+    window.addEventListener("resize", slideImage);
+
+    // Clean up the event listeners when the component unmounts
+    return () => {
+      imgBtns.forEach((imgItem) => {
+        imgItem.removeEventListener("click", slideImage);
+      });
+      window.removeEventListener("resize", slideImage);
+    };
+  }, []);
 
   return (
-    <div className="product-container">
-      {showLightbox && (
-        <Lightbox
-          images={images}
-          slideIndex={slideIndex}
-          nextSlide={nextSlide}
-          previousSlide={previousSlide}
-          setShowLightbox={setShowLightbox}
-        />
-      )}
-      <div className="product-gallery">
-        {images.map((image, index) => (
-          <div className="gallery-image" key={index}>
-            <img
-              src={image}
-              alt={`Product ${index + 1}`}
-              onClick={() => openLightbox(index)}
-              className="gallery-image-item"
-            />
+    <div>
+      <div className="card-wrapper">
+        <div className="card">
+          <div className="product-imgs">
+            <div className="img-display">
+              <div className="img-showcase">
+                <img src={image1} alt="shoe image" />
+                <img src={image2} alt="shoe image" />
+                <img src={image3} alt="shoe image" />
+                <img src={image4} alt="shoe image" />
+              </div>
+            </div>
+            <div className="img-select">
+              <div className="img-item">
+                <a href="#" data-id="1">
+                  <img src={image1} alt="shoe image" />
+                </a>
+              </div>
+              <div className="img-item">
+                <a href="#" data-id="2">
+                  <img src={image2} alt="shoe image" />
+                </a>
+              </div>
+              <div className="img-item">
+                <a href="#" data-id="3">
+                  <img src={image3} alt="shoe image" />
+                </a>
+              </div>
+              <div className="img-item">
+                <a href="#" data-id="4">
+                  <img src={image4} alt="shoe image" />
+                </a>
+              </div>
+            </div>
           </div>
-        ))}
-      </div>
-      <div className="product-details">
-        <div className="product-image">
-          <img src={images[slideIndex]} alt={`Product ${slideIndex + 1}`} />
-        </div>
-        <div className="product-info">
-          <p>Nanba Car House</p>
-          <h1>Mr. Bean Car</h1>
-          <h4>$5000</h4>
-          <a href="#" className="btn">
-            Call Me
-          </a>
+          <div className="product-content">
+            <h2 className="product-title">nike shoes</h2>
+            <a href="#" className="product-link">
+              visit nike store
+            </a>
+            <div className="product-rating">
+              <i className="fas fa-star"></i>
+              <i className="fas fa-star"></i>
+              <i className="fas fa-star"></i>
+              <i className="fas fa-star"></i>
+              <i className="fas fa-star-half-alt"></i>
+              <span>4.7(21)</span>
+            </div>
+
+            <div className="product-price">
+              <p className="last-price">
+                Old Price: <span>$257.00</span>
+              </p>
+              <p className="new-price">
+                New Price: <span>$249.00 (5%)</span>
+              </p>
+            </div>
+
+            <div className="product-detail">
+              <h2>about this item: </h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo
+                eveniet veniam tempora fuga tenetur placeat sapiente architecto
+                illum soluta consequuntur, aspernatur quidem at sequi ipsa!
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Consequatur, perferendis eius. Dignissimos, labore suscipit.
+                Unde.
+              </p>
+              <ul>
+                <li>
+                  Color: <span>Black</span>
+                </li>
+                <li>
+                  Available: <span>in stock</span>
+                </li>
+                <li>
+                  Category: <span>Shoes</span>
+                </li>
+                <li>
+                  Shipping Area: <span>All over the world</span>
+                </li>
+                <li>
+                  Shipping Fee: <span>Free</span>
+                </li>
+              </ul>
+            </div>
+
+            <div className="purchase-info">
+              <input type="number" min="0" value="1" />
+              <button type="button" className="btn">
+                Add to Cart <i className="fas fa-shopping-cart"></i>
+              </button>
+              <button type="button" className="btn">
+                Compare
+              </button>
+            </div>
+
+            <div className="social-links">
+              <p>Share At: </p>
+              <a href="#">
+                <i className="fab fa-facebook-f"></i>
+              </a>
+              <a href="#">
+                <i className="fab fa-twitter"></i>
+              </a>
+              <a href="#">
+                <i className="fab fa-instagram"></i>
+              </a>
+              <a href="#">
+                <i className="fab fa-whatsapp"></i>
+              </a>
+              <a href="#">
+                <i className="fab fa-pinterest"></i>
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
