@@ -1,9 +1,10 @@
 import React, { useEffect } from "react";
 import "./navbarpage.css";
-import image1 from "../../Assets/shoe_1.jpg";
-import image2 from "../../Assets/shoe_2.jpg";
-import image3 from "../../Assets/shoe_3.jpg";
-import image4 from "../../Assets/shoe_4.jpg";
+import image1 from "../../Assets/car back.webp";
+import image2 from "../../Assets/car front.webp";
+import image3 from "../../Assets/car top.webp";
+import image4 from "../../Assets/car rain.webp";
+import image5 from "../../Assets/car frontview.webp";
 
 const NavbarPage = () => {
   useEffect(() => {
@@ -51,6 +52,7 @@ const NavbarPage = () => {
                 <img src={image2} alt="shoe image" />
                 <img src={image3} alt="shoe image" />
                 <img src={image4} alt="shoe image" />
+                <img src={image5} alt="shoe image" />
               </div>
             </div>
             <div className="img-select">
@@ -74,6 +76,21 @@ const NavbarPage = () => {
                   <img src={image4} alt="shoe image" />
                 </a>
               </div>
+              <div className="img-item">
+                <a href="#" data-id="5">
+                  <img src={image5} alt="shoe image" />
+                </a>
+              </div>
+              {/* YouTube iframe */}
+              {/* <iframe
+                className="img-item"
+                width="420"
+                height="345"
+                src="https://www.youtube.com/embed/PmVTFtwadzM"
+                title="YouTube Video"
+                frameBorder="0"
+                allowFullScreen
+              ></iframe> */}
             </div>
           </div>
           <div className="product-content">
