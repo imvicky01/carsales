@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import "./navbarpage.css";
+import "./NavbarPage.css";
 import image1 from "../../Assets/car back.webp";
 import image2 from "../../Assets/car front.webp";
 import image3 from "../../Assets/car top.webp";
