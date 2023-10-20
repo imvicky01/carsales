@@ -273,7 +273,25 @@ img {
     }
   }
 }
+
 /* Your previous CSS rules */
+
+@media screen and (min-width: 520px) {
+  .product-content {
+    padding-top: 5px;
+    /* Adjust this value to your preference */
+  }
+
+  .product-imgs {
+    padding-top: 5px;
+  }
+
+  .img-showcase {
+    margin-top: -400px;
+    /* Adjust this value to control the margin-top */
+  }
+
+}
 
 @media screen and (min-width: 992px) {
   .card {

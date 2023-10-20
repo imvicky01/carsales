@@ -31,9 +31,8 @@ const NavbarPage = () => {
         ".img-showcase img:first-child"
       ).clientWidth;
 
-      document.querySelector(".img-showcase").style.transform = `translateX(${
-        -(imgId - 1) * displayWidth
-      }px)`;
+      document.querySelector(".img-showcase").style.transform = `translateX(${-(imgId - 1) * displayWidth
+        }px)`;
     }
 
     window.addEventListener("resize", slideImage);
@@ -185,7 +184,7 @@ const NavbarPage = () => {
         </div>
       </div>
 
-      {/* Include the Sellers component code below */}
+      {/* Include the Sellers component code below
       <div className="sellers section">
         <div className="secContainer container">
           <div data-aos="fade-up" className="secHeading grid">
@@ -237,7 +236,7 @@ const NavbarPage = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };
