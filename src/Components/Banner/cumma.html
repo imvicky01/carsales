@@ -58,3 +58,59 @@
 </body>
 
 </html>
+
+import React from 'react';
+import './styles.css'; // Make sure to import your CSS file
+import 'font-awesome/css/font-awesome.min.css'; // You can include the Font Awesome CSS here or in your index.html
+
+function CarOverview() {
+return (
+<div className="car-info">
+    <h1>Car Overview</h1>
+    <table>
+        <tr>
+            <td><i className="fas fa-calendar"></i> Registration Year</td>
+            <td>Oct 2021</td>
+        </tr>
+        <tr>
+            <td><i className="fas fa-shield"></i> Insurance Validity</td>
+            <td>Comprehensive</td>
+        </tr>
+        <tr>
+            <td><i className="fas fa-gas-pump"></i> Fuel Type</td>
+            <td>Diesel</td>
+        </tr>
+        <tr>
+            <td><i className="fas fa-chair"></i> Seats</td>
+            <td>5 Seats</td>
+        </tr>
+        <tr>
+            <td><i className="fas fa-tachometer-alt"></i> Kms Driven</td>
+            <td>31,344 Kms</td>
+        </tr>
+        <tr>
+            <td><i className="fas fa-map-marker"></i> RTO</td>
+            <td>KA05</td>
+        </tr>
+        <tr>
+            <td><i className="fas fa-user"></i> Ownership</td>
+            <td>First Owner</td>
+        </tr>
+        <tr>
+            <td><i className="fas fa-cogs"></i> Engine Displacement</td>
+            <td>1956 cc</td>
+        </tr>
+        <tr>
+            <td><i className="fas fa-cogs"></i> Transmission</td>
+            <td>Manual</td>
+        </tr>
+        <tr>
+            <td><i className="fas fa-calendar"></i> Year of Manufacture</td>
+            <td>2021</td>
+        </tr>
+    </table>
+</div>
+);
+}
+
+export default CarOverview;

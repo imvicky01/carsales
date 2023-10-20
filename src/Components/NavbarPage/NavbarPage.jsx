@@ -11,6 +11,8 @@ import sellerImage3 from "../../Assets/logo.png";
 import sellerImage4 from "../../Assets/logo.png";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faStar, faStarHalfAlt, faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 
 const NavbarPage = () => {
   useEffect(() => {
@@ -31,8 +33,9 @@ const NavbarPage = () => {
         ".img-showcase img:first-child"
       ).clientWidth;
 
-      document.querySelector(".img-showcase").style.transform = `translateX(${-(imgId - 1) * displayWidth
-        }px)`;
+      document.querySelector(".img-showcase").style.transform = `translateX(${-(
+        imgId - 1
+      ) * displayWidth}px)`;
     }
 
     window.addEventListener("resize", slideImage);
@@ -86,16 +89,6 @@ const NavbarPage = () => {
                   <img src={image5} alt="shoe image" />
                 </a>
               </div>
-              {/* YouTube iframe */}
-              {/* <iframe
-                className="img-item"
-                width="420"
-                height="345"
-                src="https://www.youtube.com/embed/PmVTFtwadzM"
-                title="YouTube Video"
-                frameBorder="0"
-                allowFullScreen
-              ></iframe> */}
             </div>
           </div>
           <div className="product-content">
@@ -104,14 +97,13 @@ const NavbarPage = () => {
               visit nike store
             </a>
             <div className="product-rating">
-              <i className="fas fa-star"></i>
-              <i className="fas fa-star"></i>
-              <i className="fas fa-star"></i>
-              <i className="fas fa-star"></i>
-              <i className="fas fa-star-half-alt"></i>
+              <FontAwesomeIcon icon={faStar} />
+              <FontAwesomeIcon icon={faStar} />
+              <FontAwesomeIcon icon={faStar} />
+              <FontAwesomeIcon icon={faStar} />
+              <FontAwesomeIcon icon={faStarHalfAlt} />
               <span>4.7(21)</span>
             </div>
-
             <div className="product-price">
               <p className="last-price">
                 Old Price: <span>$257.00</span>
@@ -120,7 +112,6 @@ const NavbarPage = () => {
                 New Price: <span>$249.00 (5%)</span>
               </p>
             </div>
-
             <div className="product-detail">
               <h2>about this item: </h2>
               <p>
@@ -151,37 +142,81 @@ const NavbarPage = () => {
                 </li>
               </ul>
             </div>
-
             <div className="purchase-info">
               <input type="number" min="0" value="1" />
               <button type="button" className="btn">
-                Add to Cart <i className="fas fa-shopping-cart"></i>
+                Add to Cart <FontAwesomeIcon icon={faShoppingCart} />
               </button>
               <button type="button" className="btn">
                 Compare
               </button>
             </div>
-
             <div className="social-links">
               <p>Share At: </p>
               <a href="#">
-                <i className="fab fa-facebook-f"></i>
+                <FontAwesomeIcon icon={['fab', 'facebook-f']} />
               </a>
               <a href="#">
-                <i className="fab fa-twitter"></i>
+                <FontAwesomeIcon icon={['fab', 'twitter']} />
               </a>
               <a href="#">
-                <i className="fab fa-instagram"></i>
+                <FontAwesomeIcon icon={['fab', 'instagram']} />
               </a>
               <a href="#">
-                <i className="fab fa-whatsapp"></i>
+                <FontAwesomeIcon icon={['fab', 'whatsapp']} />
               </a>
               <a href="#">
-                <i className="fab fa-pinterest"></i>
+                <FontAwesomeIcon icon={['fab', 'pinterest']} />
               </a>
             </div>
           </div>
         </div>
+      </div>
+
+      <div className="car-info">
+        <h1>Car Overview</h1>
+        <table>
+          <tr>
+            <td><FontAwesomeIcon icon="calendar" /> Registration Year</td>
+            <td>Oct 2021</td>
+          </tr>
+          <tr>
+            <td><FontAwesomeIcon icon="shield" /> Insurance Validity</td>
+            <td>Comprehensive</td>
+          </tr>
+          <tr>
+            <td><FontAwesomeIcon icon="gas-pump" /> Fuel Type</td>
+            <td>Diesel</td>
+          </tr>
+          <tr>
+            <td><FontAwesomeIcon icon="chair" /> Seats</td>
+            <td>5 Seats</td>
+          </tr>
+          <tr>
+            <td><FontAwesomeIcon icon="tachometer-alt" /> Kms Driven</td>
+            <td>31,344 Kms</td>
+          </tr>
+          <tr>
+            <td><FontAwesomeIcon icon="map-marker" /> RTO</td>
+            <td>KA05</td>
+          </tr>
+          <tr>
+            <td><FontAwesomeIcon icon="user" /> Ownership</td>
+            <td>First Owner</td>
+          </tr>
+          <tr>
+            <td><FontAwesomeIcon icon="cogs" /> Engine Displacement</td>
+            <td>1956 cc</td>
+          </tr>
+          <tr>
+            <td><FontAwesomeIcon icon="cogs" /> Transmission</td>
+            <td>Manual</td>
+          </tr>
+          <tr>
+            <td><FontAwesomeIcon icon="calendar" /> Year of Manufacture</td>
+            <td>2021</td>
+          </tr>
+        </table>
       </div>
 
       {/* Include the Sellers component code below
