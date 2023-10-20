@@ -1,6 +1,7 @@
 import React from "react";
 import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import "bootstrap/dist/css/bootstrap.min.css";
 import Navbar from "./Components/Navbar/Navbar";
 import Home from "./Components/Home/Home";
 import Search from "./Components/Search/Search";
@@ -8,8 +9,9 @@ import Trending from "./Components/Trending/Trending";
 import Sellers from "./Components/Sellers/Sellers";
 import Auction from "./Components/Auction/Auction";
 import Review from "./Components/Review/Review";
-import Footer from "./Components/Footer/Footer";
+// import Footer from "./Components/Footer/Footer";
 import NavbarPage from "./Components/NavbarPage/NavbarPage";
+import Banner from "./Components/Banner/Banner";
 
 const App = () => {
   return (
@@ -29,6 +31,7 @@ const App = () => {
 const MainPage = () => {
   return (
     <div>
+      <Banner />
       <Home />
       <Search />
       <Trending />
