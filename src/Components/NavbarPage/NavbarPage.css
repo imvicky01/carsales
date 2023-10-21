@@ -265,7 +265,7 @@ img {
 }
 
 /* Your previous CSS rules */
-@media screen and (min-width: 520px) {
+@media screen and (min-width: 375px) {
   .product-content {
     padding-top: 5px;
     /* Adjust this value to your preference */
@@ -274,7 +274,7 @@ img {
     padding-top: 5px;
   }
   .img-showcase {
-    margin-top: -20px;
+    margin-top: -400px;
     /* Adjust this value to control the margin-top */
   }
 }

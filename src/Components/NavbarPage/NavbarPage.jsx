@@ -31,8 +31,9 @@ const NavbarPage = () => {
         ".img-showcase img:first-child"
       ).clientWidth;
 
-      document.querySelector(".img-showcase").style.transform = `translateX(${-(imgId - 1) * displayWidth
-        }px)`;
+      document.querySelector(".img-showcase").style.transform = `translateX(${
+        -(imgId - 1) * displayWidth
+      }px)`;
     }
 
     window.addEventListener("resize", slideImage);
