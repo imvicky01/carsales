@@ -5,18 +5,27 @@ import image2 from "../../Assets/car front.webp";
 import image3 from "../../Assets/car top.webp";
 import image4 from "../../Assets/car rain.webp";
 import image5 from "../../Assets/car frontview.webp";
-import sellerImage1 from "../../Assets/logo.png";
-import sellerImage2 from "../../Assets/logo.png";
-import sellerImage3 from "../../Assets/logo.png";
-import sellerImage4 from "../../Assets/logo.png";
-import Aos from "aos";
-import "aos/dist/aos.css";
+// import sellerImage1 from "../../Assets/logo.png";
+// import sellerImage2 from "../../Assets/logo.png";
+// import sellerImage3 from "../../Assets/logo.png";
+// import sellerImage4 from "../../Assets/logo.png";
+// import Aos from "aos";
+// import "aos/dist/aos.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"; //
 import {
+  faCalendarDay,
+  faShieldHalved,
+  faGasPump,
   faStar,
   faStarHalfAlt,
   faShoppingCart,
-  faCar,
+  faCarOn,
+  faGauge,
+  faBuilding,
+  faUserCheck,
+  faWrench,
+  faGear,
+  faClockRotateLeft,
 } from "@fortawesome/free-solid-svg-icons";
 
 const NavbarPage = () => {
@@ -180,69 +189,139 @@ const NavbarPage = () => {
           </div>
           <div className="car-info">
             <h1>Car Overview</h1>
+            <div className="car-info-table">
+              <div className="car-info-row">
+                <div className="car-info-item">
+                  <FontAwesomeIcon icon={faCalendarDay} /> Registration Year
+                </div>
+                <div className="car-info-item-value">Oct 2021</div>
+              </div>
+              <div className="car-info-row">
+                <div className="car-info-item">
+                  <FontAwesomeIcon icon={faShieldHalved} /> Insurance Validity
+                </div>
+                <div className="car-info-item-value">Comprehensive</div>
+              </div>
+              <div className="car-info-row">
+                <div className="car-info-item">
+                  <FontAwesomeIcon icon={faGasPump} /> Fuel Type
+                </div>
+                <div className="car-info-item-value">Diesel</div>
+              </div>
+              <div className="car-info-row">
+                <div className="car-info-item">
+                  <FontAwesomeIcon icon={faCarOn} /> Seats
+                </div>
+                <div className="car-info-item-value">5 Seats</div>
+              </div>
+              <div className="car-info-row">
+                <div className="car-info-item">
+                  <FontAwesomeIcon icon={faGauge} /> Kms Driven
+                </div>
+                <div className="car-info-item-value">31,344 Kms</div>
+              </div>
+            </div>
+            <div className="car-info-table">
+              <div className="car-info-row">
+                <div className="car-info-item">
+                  <FontAwesomeIcon icon={faBuilding} /> RTO
+                </div>
+                <div className="car-info-item-value">KA05</div>
+              </div>
+              <div className="car-info-row">
+                <div className="car-info-item">
+                  <FontAwesomeIcon icon={faUserCheck} /> Ownership
+                </div>
+                <div className="car-info-item-value">First Owner</div>
+              </div>
+              <div className="car-info-row">
+                <div className="car-info-item">
+                  <FontAwesomeIcon icon={faWrench} /> Engine Displacement
+                </div>
+                <div className="car-info-item-value">1956 cc</div>
+              </div>
+              <div className="car-info-row">
+                <div className="car-info-item">
+                  <FontAwesomeIcon icon={faGear} /> Transmission
+                </div>
+                <div className="car-info-item-value">Manual</div>
+              </div>
+              <div className="car-info-row">
+                <div className="car-info-item">
+                  <FontAwesomeIcon icon={faClockRotateLeft} /> Year of
+                  Manufacture
+                </div>
+                <div className="car-info-item-value">2021</div>
+              </div>
+            </div>
+          </div>
+
+          {/* <div className="car-info">
+            <h1>Car Overview</h1>
             <table>
               <tr>
                 <td>
-                  <FontAwesomeIcon icon={faCar} /> Registration Year
+                  <FontAwesomeIcon icon={faCalendarDay} /> Registration Year
                 </td>
                 <td>Oct 2021</td>
               </tr>
               <tr>
                 <td>
-                  <FontAwesomeIcon icon={faStar} /> Insurance Validity
+                  <FontAwesomeIcon icon={faShieldHalved} /> Insurance Validity
                 </td>
                 <td>Comprehensive</td>
               </tr>
               <tr>
                 <td>
-                  <FontAwesomeIcon icon={faStar} /> Fuel Type
+                  <FontAwesomeIcon icon={faGasPump} /> Fuel Type
                 </td>
                 <td>Diesel</td>
               </tr>
               <tr>
                 <td>
-                  <FontAwesomeIcon icon={faStar} /> Seats
+                  <FontAwesomeIcon icon={faCarOn} /> Seats
                 </td>
                 <td>5 Seats</td>
               </tr>
               <tr>
                 <td>
-                  <FontAwesomeIcon icon={faStar} /> Kms Driven
+                  <FontAwesomeIcon icon={faGauge} /> Kms Driven
                 </td>
                 <td>31,344 Kms</td>
               </tr>
               <tr>
                 <td>
-                  <FontAwesomeIcon icon={faStar} /> RTO
+                  <FontAwesomeIcon icon={faBuilding} /> RTO
                 </td>
                 <td>KA05</td>
               </tr>
               <tr>
                 <td>
-                  <FontAwesomeIcon icon={faStar} /> Ownership
+                  <FontAwesomeIcon icon={faUserCheck} /> Ownership
                 </td>
                 <td>First Owner</td>
               </tr>
               <tr>
                 <td>
-                  <FontAwesomeIcon icon={faStar} /> Engine Displacement
+                  <FontAwesomeIcon icon={faWrench} /> Engine Displacement
                 </td>
                 <td>1956 cc</td>
               </tr>
               <tr>
                 <td>
-                  <FontAwesomeIcon icon={faStar} /> Transmission
+                  <FontAwesomeIcon icon={faGear} /> Transmission
                 </td>
                 <td>Manual</td>
               </tr>
               <tr>
                 <td>
-                  <FontAwesomeIcon icon={faStar} /> Year of Manufacture
+                  <FontAwesomeIcon icon={faClockRotateLeft} /> Year of
+                  Manufacture
                 </td>
                 <td>2021</td>
               </tr>
             </table>
-          </div>
+          </div> */}
         </div>
       </div>
 

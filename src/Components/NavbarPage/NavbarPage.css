@@ -11,49 +11,43 @@ body {
 }
 
 .car-info {
-  background-color: #ddd;
-  max-width: 30px;
-  margin: 30px auto;
-  padding: 30px;
-  border: 1px solid #000;
-  border-radius: #000;
-  box-shadow: 30cap;
+  background-color: #fff;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
 }
 .car-info h1 {
   font-size: 24px;
-  margin-bottom: 0.5px;
-  padding-bottom: 1px; /* Add some padding */
-  transform: rotate(90deg); /* Rotate the text */
-  transform-origin: left bottom; /* Set the rotation origin */
-  white-space: nowrap; /* Prevent wrapping */
-  writing-mode: vertical-rl; /* Change writing mode for vertical text */
-  text-orientation: upright; /* Set text orientation */
-  border-bottom: 2px solid #000; /* Add margin line */
-  padding-bottom: 10px; /* Add some padding */
+  margin-bottom: 20px;
 }
-.car-info table {
-  width: 100%;
-  border-bottom: 2px solid #000; /* Add margin line */
-  padding-bottom: 10px; /* Add some padding */
+.car-info .car-info-table {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
-.car-info table td {
-  padding: 10px 0;
-  border-bottom: 1px solid #fff;
+.car-info .car-info-table .car-info-row {
+  flex-basis: 39%;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
 }
-.car-info table td:first-child {
+.car-info .car-info-table .car-info-row .car-info-item {
+  display: flex;
+  align-items: center;
   font-weight: bold;
+}
+.car-info .car-info-table .car-info-row .car-info-item-value {
+  margin-left: 10px;
 }
 
 .card-wrapper {
   max-width: 1100px;
   margin: 0 auto;
   padding: 20px;
-  display: flex;
-  justify-content: center; /* Center the card */
-  align-items: center; /* Center vertically */
-  border: 1px solid #000; /* Replace with your desired border color */
-  border-radius: #000; /* Replace with your desired border radius */
-  box-shadow: #ffc107; /* Replace with your desired box shadow */
 }
 
 img {
@@ -305,7 +299,7 @@ img {
 }
 
 /* Your previous CSS rules */
-@media screen and (min-width: 375px) {
+@media screen and (min-width: 520px) {
   .product-content {
     padding-top: 5px;
     /* Adjust this value to your preference */
