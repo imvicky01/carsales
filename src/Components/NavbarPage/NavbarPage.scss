@@ -32,7 +32,12 @@ body {
 
   .car-info-table {
     display: flex;
-    justify-content: space-between;
+    // flex-direction: column; // Stack rows vertically
+    align-items: center; // Center horizontally
+    // justify-content: center; // Center vertically
+    justify-content: center;
+    row-gap: 10px;
+    column-gap: 30px;
     flex-wrap: wrap;
 
     .car-info-column {

@@ -29,7 +29,11 @@ body {
 }
 .car-info .car-info-table {
   display: flex;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
+  row-gap: 10px;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
   flex-wrap: wrap;
 }
 .car-info .car-info-table .car-info-column {
