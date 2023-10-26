@@ -5,20 +5,22 @@ import image1 from "../../Assets/car11.jpg";
 import image2 from "../../Assets/car12.webp";
 import image3 from "../../Assets/car13.jpg";
 
-const carouselStyle = {
-  marginTop: "150px", // Add margin at the top of the Carousel
-};
-
-const imageStyle = {
-  width: "300px",
-  height: "500px",
-};
-
 const Banner = () => {
+  const carouselStyle = {
+    marginTop: "150px", // Add margin at the top of the Carousel
+    // margin: "0", // Remove margin
+    // position: "center", // Add relative positioning
+  };
+
+  const imageStyle = {
+    width: "300px",
+    height: "500px",
+  };
+
   return (
     <Container fluid>
       <Row className="justify-content-center align-items-center">
-        <Col lg={8}>
+        <Col lg={100}>
           <Carousel style={carouselStyle}>
             {" "}
             {/* Apply the carousel style */}
