@@ -47,12 +47,10 @@ const NavbarPage = () => {
         ".img-showcase img:first-child"
       ).clientWidth;
 
-      document.querySelector(".img-showcase").style.transform = `translateX(${
-        -(imgId - 1) * displayWidth
-      }px)`;
-      document.querySelector(".img-showcase").style.transform = `translateX(${
-        -(imgId - 1) * displayWidth
-      }px)`;
+      document.querySelector(".img-showcase").style.transform = `translateX(${-(imgId - 1) * displayWidth
+        }px)`;
+      document.querySelector(".img-showcase").style.transform = `translateX(${-(imgId - 1) * displayWidth
+        }px)`;
     }
 
     window.addEventListener("resize", slideImage);
@@ -187,7 +185,78 @@ const NavbarPage = () => {
               </a>
             </div>
           </div>
-          <div className="car-info">
+          <div className="car-info" >
+            <h1>Car Overview</h1>
+            <div className="car-info-table">
+              <div className="car-info-column">
+                <div className="car-info-row">
+                  <div className="car-info-item">
+                    <FontAwesomeIcon icon={faCalendarDay} /> Registration Year
+                  </div>
+                  <div className="car-info-item-value">Oct 2021</div>
+                </div>
+                <div className="car-info-row">
+                  <div className="car-info-item">
+                    <FontAwesomeIcon icon={faGasPump} /> Fuel Type
+                  </div>
+                  <div className="car-info-item-value">Diesel</div>
+                </div>
+                <div className="car-info-row">
+                  <div className="car-info-item">
+                    <FontAwesomeIcon icon={faBuilding} /> RTO
+                  </div>
+                  <div className="car-info-item-value">KA05</div>
+                </div>
+                <div className="car-info-row">
+                  <div className="car-info-item">
+                    <FontAwesomeIcon icon={faGear} /> Transmission
+                  </div>
+                  <div className="car-info-item-value">Manual</div>
+                </div>
+                <div className="car-info-row">
+                  <div className="car-info-item">
+                    <FontAwesomeIcon icon={faClockRotateLeft} /> Year of Manufacture
+                  </div>
+                  <div className="car-info-item-value">2021</div>
+                </div>
+              </div>
+              <div className="car-info-column">
+                <div className="car-info-row">
+                  <div className="car-info-item">
+                    <FontAwesomeIcon icon={faShieldHalved} /> Insurance Validity
+                  </div>
+                  <div className="car-info-item-value">Comprehensive</div>
+                </div>
+                <div className="car-info-row">
+                  <div className="car-info-item">
+                    <FontAwesomeIcon icon={faCarOn} /> Seats
+                  </div>
+                  <div className="car-info-item-value">5 Seats</div>
+                </div>
+
+                <div className="car-info-row">
+                  <div className="car-info-item">
+                    <FontAwesomeIcon icon={faUserCheck} /> Ownership
+                  </div>
+                  <div className="car-info-item-value">First Owner</div>
+                </div>
+                <div className="car-info-row">
+                  <div className="car-info-item">
+                    <FontAwesomeIcon icon={faGauge} /> Kms Driven
+                  </div>
+                  <div className="car-info-item-value">31,344 Kms</div>
+                </div>
+                <div className="car-info-row">
+                  <div className="car-info-item">
+                    <FontAwesomeIcon icon={faWrench} /> Engine Displacement
+                  </div>
+                  <div className="car-info-item-value">1956 cc</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* <div className="car-info">
             <h1>Car Overview</h1>
             <div className="car-info-table">
               <div className="car-info-row">
@@ -254,7 +323,7 @@ const NavbarPage = () => {
                 <div className="car-info-item-value">2021</div>
               </div>
             </div>
-          </div>
+          </div> */}
 
           {/* <div className="car-info">
             <h1>Car Overview</h1>

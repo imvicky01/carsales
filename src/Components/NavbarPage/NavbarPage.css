@@ -14,10 +14,12 @@ body {
   background-color: #fff;
   max-width: 500px;
   margin: 0 auto;
+  margin-left: 275px;
   padding: 20px;
   border: 1px solid #ccc;
   border-radius: 5px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: grid;
   text-align: center;
 }
 .car-info h1 {
@@ -25,22 +27,30 @@ body {
   margin-bottom: 20px;
 }
 .car-info .car-info-table {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
 }
-.car-info .car-info-table .car-info-row {
-  flex-basis: 39%;
+.car-info .car-info-table .car-info-column {
+  flex-basis: calc(50% - 10px);
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.car-info .car-info-table .car-info-column .car-info-row {
   margin-bottom: 10px;
   display: flex;
   justify-content: space-between;
 }
-.car-info .car-info-table .car-info-row .car-info-item {
+.car-info .car-info-table .car-info-column .car-info-row .car-info-item {
   display: flex;
   align-items: center;
   font-weight: bold;
 }
-.car-info .car-info-table .car-info-row .car-info-item-value {
+.car-info .car-info-table .car-info-column .car-info-row .car-info-item .fa {
+  margin-right: 10px;
+}
+.car-info .car-info-table .car-info-column .car-info-row .car-info-item-value {
   margin-left: 10px;
 }
 
@@ -313,6 +323,9 @@ img {
   }
 }
 @media screen and (min-width: 992px) {
+  .car-info {
+    margin: 0 auto;
+  }
   .card {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
