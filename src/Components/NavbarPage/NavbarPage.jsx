@@ -185,7 +185,7 @@ const NavbarPage = () => {
               </a>
             </div>
           </div>
-          <div className="car-info">
+          <div className="car-info" >
             <h1>Car Overview</h1>
             <div className="car-info-table">
               <div className="car-info-column">
@@ -203,15 +203,15 @@ const NavbarPage = () => {
                 </div>
                 <div className="car-info-row">
                   <div className="car-info-item">
-                    <FontAwesomeIcon icon={faGauge} /> Kms Driven
+                    <FontAwesomeIcon icon={faBuilding} /> RTO
                   </div>
-                  <div className="car-info-item-value">31,344 Kms</div>
+                  <div className="car-info-item-value">KA05</div>
                 </div>
                 <div className="car-info-row">
                   <div className="car-info-item">
-                    <FontAwesomeIcon icon={faWrench} /> Engine Displacement
+                    <FontAwesomeIcon icon={faGear} /> Transmission
                   </div>
-                  <div className="car-info-item-value">1956 cc</div>
+                  <div className="car-info-item-value">Manual</div>
                 </div>
                 <div className="car-info-row">
                   <div className="car-info-item">
@@ -233,12 +233,7 @@ const NavbarPage = () => {
                   </div>
                   <div className="car-info-item-value">5 Seats</div>
                 </div>
-                <div className="car-info-row">
-                  <div className="car-info-item">
-                    <FontAwesomeIcon icon={faBuilding} /> RTO
-                  </div>
-                  <div className="car-info-item-value">KA05</div>
-                </div>
+
                 <div className="car-info-row">
                   <div className="car-info-item">
                     <FontAwesomeIcon icon={faUserCheck} /> Ownership
@@ -247,9 +242,15 @@ const NavbarPage = () => {
                 </div>
                 <div className="car-info-row">
                   <div className="car-info-item">
-                    <FontAwesomeIcon icon={faGear} /> Transmission
+                    <FontAwesomeIcon icon={faGauge} /> Kms Driven
                   </div>
-                  <div className="car-info-item-value">Manual</div>
+                  <div className="car-info-item-value">31,344 Kms</div>
+                </div>
+                <div className="car-info-row">
+                  <div className="car-info-item">
+                    <FontAwesomeIcon icon={faWrench} /> Engine Displacement
+                  </div>
+                  <div className="car-info-item-value">1956 cc</div>
                 </div>
               </div>
             </div>

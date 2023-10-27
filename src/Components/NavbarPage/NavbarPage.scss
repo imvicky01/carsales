@@ -15,14 +15,17 @@ body {
   background-color: #fff;
   max-width: 500px;
   margin: 0 auto;
+  margin-left: 275px;
   padding: 20px;
   border: 1px solid #ccc;
   border-radius: 5px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  display: flex;
-  flex-direction: column; // To align items vertically
-  align-items: center; // To center items horizontally
+  display: grid;
+  // display: flex;
+  // flex-direction: column; // To align items vertically
+  // align-items: center; // To center items horizontally
   text-align: center;
+
 
 
   h1 {
@@ -31,14 +34,17 @@ body {
   }
 
   .car-info-table {
-    display: flex;
-    // flex-direction: column; // Stack rows vertically
-    align-items: center; // Center horizontally
-    // justify-content: center; // Center vertically
-    justify-content: center;
-    row-gap: 10px;
-    column-gap: 30px;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px; // Adjust the gap as needed for both rows and columns
+    // display: flex;
+    // // flex-direction: column; // Stack rows vertically
+    // align-items: center; // Center horizontally
+    // // justify-content: center; // Center vertically
+    // justify-content: center;
+    // row-gap: 10px;
+    // column-gap: 30px;
+    // flex-wrap: wrap;
 
     .car-info-column {
       flex-basis: calc(50% - 10px);
@@ -73,39 +79,8 @@ body {
   }
 }
 
-// .car-info {
-//   background-color: #fff;
-//   max-width: 500px;
-//   margin: 0 auto;
-//   padding: 20px;
-//   border: 1px solid #ccc;
-//   border-radius: 5px;
-//   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-//   text-align: center;
 
-//   h1 {
-//     font-size: 24px;
-//     margin-bottom: 20px;
-//   }
-
-//   table {
-//     width: 100%;
-
-//     td {
-//       padding: 10px 0;
-//       border-bottom: 1px solid;
-
-//       &:first-child {
-//         font-weight: bold;
-//       }
-//     }
-//   }
-//   .car-info table {
-//     display: grid;
-//     grid-template-columns: 1fr 1fr;
-//     gap: 10px; /* Adjust the gap as needed */
-//   }
-// }
+//
 
 .card-wrapper {
   max-width: 1100px;
@@ -389,6 +364,10 @@ img {
 }
 
 @media screen and (min-width: 992px) {
+  .car-info {
+    margin: 0 auto; // Center the .car-info component horizontally
+  }
+
   .card {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
